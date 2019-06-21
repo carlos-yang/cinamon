@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Myeongsoo Yang's official website
 
-## Available Scripts
+This website for personal project.
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+- Author : Design & Code by Myeongsoo Yang
+- Tech : React.JS(16.8+), Mobx, Axios, HTML5, JavaScript
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Version
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- version 0.1 : 2019. 6
 
-### `npm test`
+## References
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### React with Mbox
 
-### `npm run build`
+[React-Mobx Realworld Example](https://github.com/gothinkster/react-mobx-realworld-example-app)
+[React-Mobx Intro guide](https://velog.io/@velopert/MobX-1-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-9sjltans3p)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Built with
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- HTML & CSS, JavaScript
+- Editor: VSCode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Design
 
-### `npm run eject`
+## Setting up Development Enviroment
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Git Clone this repository in your working directory.
+`git clone https://github.com/james-yang-dev/cinamon.git`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Front
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Move to cloned repository.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Install Libraries
 
-## Learn More
+```
+yarn install
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Run Server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+yarn start
+npm start
+```
