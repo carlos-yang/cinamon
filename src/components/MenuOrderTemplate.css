@@ -1,0 +1,27 @@
+.MenuOrderTemplate {
+  width: 768px;
+  display: flex;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.MenuOrderTemplate h2 {
+  margin-top: 0;
+}
+
+.MenuOrderTemplate > div {
+  padding: 1rem;
+  flex: 1;
+}
+
+.MenuOrderTemplate .items-wrapper {
+  background: #95a5a6;
+  flex: 1;
+}
+
+.MenuOrderTemplate .basket-wrapper {
+  background: #ecf0f1;
+  flex: 2;
+}
