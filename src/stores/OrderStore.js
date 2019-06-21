@@ -19,4 +19,12 @@ export default class OrderStore {
       return;
     }
   };
+
+  @action
+  cancel = orderName => {
+    const basketToCancel = this.orderedList.find(name => name === orderName);
+    if (basketToCancel) {
+      this.orderedList.remove(basketToCancel);
+    }
+  };
 }
