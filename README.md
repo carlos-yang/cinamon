@@ -15,7 +15,7 @@ This website for personal project.
 
 #### React with Mbox
 
-[React-Mobx Realworld Example](https://github.com/gothinkster/react-mobx-realworld-example-app)
+[React-Mobx Realworld Example](https://github.com/gothinkster/react-mobx-realworld-example-app),
 [React-Mobx Intro guide](https://velog.io/@velopert/MobX-1-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-9sjltans3p)
 
 #### Built with
