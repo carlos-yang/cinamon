@@ -3,14 +3,19 @@ import { observable, action, computed } from 'mobx';
 export default class MenuStore {
   @observable selectedItems = [];
 
+  constructor(root) {
+    this.root = root;
+  }
+
   @action
   put = (name, price) => {
+    const { number } = this.root.counter;
     const exist = this.selectedItems.find(item => item.name === name);
     if (!exist) {
       this.selectedItems.push({
         name,
         price,
-        count: 1
+        count: number
       });
       return;
     }
@@ -42,7 +47,6 @@ export default class MenuStore {
 
   @computed
   get total() {
-    console.log('총합 계산');
     return this.selectedItems.reduce((previous, current) => {
       return previous + current.price * current.count;
     }, 0);
