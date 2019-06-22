@@ -11,7 +11,7 @@ const MainButton = ({ toOrder, toCancel }) => {
   );
 };
 
-export default inject(({ button }) => {
-  toOrder: button.order;
-  toCancel: button.cancel;
-})(observer(MainButton));
+export default inject(({ order }) => ({
+  toOrder: order.order,
+  toCancel: order.cancel,
+}))(observer(MainButton)); 
