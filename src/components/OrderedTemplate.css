@@ -1,0 +1,22 @@
+.OrderedTemplate {
+  width: 768px;
+  display: flex;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.OrderedTemplate h2 {
+  margin-top: 0;
+}
+
+.OrderedTemplate > div {
+  padding: 1rem;
+  flex: 1;
+}
+
+.OrderedTemplate .items-wrapper {
+  background: #636e72;
+  flex: 1;
+}

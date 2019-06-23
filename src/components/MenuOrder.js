@@ -4,15 +4,19 @@ import MenuItemList from './MenuItemList';
 import BasketItemList from './BasketItemList';
 import BasketTotal from './BasketTotal';
 import MainButton from './MainButton';
+import OrderedTemplate from './OrderedTemplate';
 
 const MenuOrder = () => {
   return (
-    <MenuOrderTemplate
-      items={<MenuItemList />}
-      basket={<BasketItemList />}
-      total={<BasketTotal />}
-      mainButton={<MainButton />}
-    />
+    <React.Fragment>
+      <MenuOrderTemplate
+        items={<MenuItemList />}
+        basket={<BasketItemList />}
+        total={<BasketTotal />}
+        mainButton={<MainButton />}
+      />
+      <OrderedTemplate />
+    </React.Fragment>
   );
 };
 
