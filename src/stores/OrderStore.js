@@ -9,22 +9,19 @@ export default class OrderStore {
   }
 
   @action
-  order = (orderName, basket) => {
-    const exist = this.orderedList.find(name => name === orderName);
-    if (!exist) {
-      this.orderedList.push({
-        orderName,
-        basket
-      });
+  order = () => {
+    console.log('order Test');
+    const { selectedItem } = this.root.menu;
+    const orderName = 'add later';
+    // const exist = this.orderedList.find(name => name === orderName);
+    if (true) {
+      this.orderedList.push(selectedItem);
       return;
     }
   };
 
   @action
-  cancel = orderName => {
-    const basketToCancel = this.orderedList.find(name => name === orderName);
-    if (basketToCancel) {
-      this.orderedList.remove(basketToCancel);
-    }
+  cancel = () => {
+    console.log('주문전체취소');
   };
 }

@@ -3,16 +3,20 @@ import MenuOrderTemplate from './MenuOrderTemplate';
 import MenuItemList from './MenuItemList';
 import BasketItemList from './BasketItemList';
 import BasketTotal from './BasketTotal';
-import MainButtonList from './MainButtonList';
+import MainButton from './MainButton';
+import OrderedTemplate from './OrderedTemplate';
 
 const MenuOrder = () => {
   return (
-    <MenuOrderTemplate
-      items={<MenuItemList />}
-      basket={<BasketItemList />}
-      total={<BasketTotal />}
-      mainButton={<MainButtonList />}
-    />
+    <React.Fragment>
+      <MenuOrderTemplate
+        items={<MenuItemList />}
+        basket={<BasketItemList />}
+        total={<BasketTotal />}
+        mainButton={<MainButton />}
+      />
+      <OrderedTemplate />
+    </React.Fragment>
   );
 };
 
