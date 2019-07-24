@@ -1,0 +1,29 @@
+type Menu {
+    id: Int
+    name: String
+    price: Int
+    isSoldout: Boolean
+}
+
+type Order {
+    id: Int!
+    user: String!
+}
+
+type Query {
+    menus: [Menu!]!
+    menu(id: Int!): Menu
+}
+
+input MenuInput {
+    name: String
+    price: Int
+}
+
+input OrderList {
+    id: Int
+}
+
+type Mutation {
+    createMenu(input: [MenuInput]): String
+}

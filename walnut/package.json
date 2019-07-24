@@ -1,0 +1,21 @@
+{
+  "name": "walnut",
+  "version": "1.0.0",
+  "description": "node server for cinamon",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon indexTest.js --exec babel-node",
+    "test": "echo \"Error:no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "graphql": "^14.3.1",
+    "graphql-yoga": "^1.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
